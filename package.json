@@ -1,0 +1,46 @@
+{
+  "name": "03-findafriend-api-ignite",
+  "version": "1.0.0",
+  "description": "Find a friend API challenge of Node.js Ignite course",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsup src",
+    "start": "node dist/server.js",
+    "test": "vitest run --dir src/use-cases",
+    "test:watch": "vitest dir src/use-cases",
+    "pretest:e2e": "npm link ./prisma/vitest-environment-prisma && npm link vitest-environment-prisma",
+    "test:e2e": "vitest run --dir src/http",
+    "test:e2e:watch": "vitest --dir src/http",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix"
+  },
+  "keywords": [],
+  "author": "Artur Poffo",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cookie": "8.3.0",
+    "@fastify/jwt": "7.2.0",
+    "@prisma/client": "5.0.0",
+    "bcryptjs": "2.4.3",
+    "dotenv": "16.3.1",
+    "fastify": "4.20.0",
+    "zod": "3.21.4"
+  },
+  "devDependencies": {
+    "@rocketseat/eslint-config": "2.1.0",
+    "@types/bcryptjs": "2.4.2",
+    "@types/node": "20.4.4",
+    "@types/supertest": "2.0.12",
+    "@vitest/coverage-v8": "0.33.0",
+    "eslint": "8.45.0",
+    "prisma": "5.0.0",
+    "supertest": "6.3.3",
+    "tsup": "7.1.0",
+    "tsx": "3.12.7",
+    "typescript": "5.1.6",
+    "vite-tsconfig-paths": "4.2.0",
+    "vitest": "0.33.0"
+  }
+}
