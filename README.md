@@ -127,7 +127,7 @@ The following tools were used in the construction of the project:
 - **vitest**
 - **supertest**
 
-> See the file  [package.json](https://github.com/Artur-Poffo/02-Daily-Diet-API-Ignite/blob/main/package.json)
+> See the file  [package.json](https://github.com/Artur-Poffo/03-FindAFriend-API-Ignite/blob/main/package.json)
 
 ---
 
